@@ -34,7 +34,7 @@ const Chart = ({ sparklineData, darkMode }) => {
       <CartesianGrid stroke={darkMode ? '#fff' : '#ccc'} strokeDasharray="5 5" />
       <XAxis dataKey="date" interval={3}  tick={darkMode ? { fill: 'white' } : undefined}/>
       <YAxis tick={darkMode ? { fill: 'white' } : undefined}/>
-      <Tooltip />
+      <Tooltip contentStyle={darkMode ? { backgroundColor: '#000' } : undefined}/>
     </LineChart>
   );
 };
