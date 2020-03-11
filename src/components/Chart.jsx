@@ -9,8 +9,6 @@ import {
   Tooltip
 } from "recharts";
 
-import { useDarkMode } from '../hooks/useDarkMode';
-
 const Chart = ({ sparklineData, darkMode }) => {
   const formattedData = sparklineData
     .map((price, idx) => {
